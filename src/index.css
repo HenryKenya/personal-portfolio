@@ -33,7 +33,7 @@ h5,
 h6 {
   font-family: "Montserrat", sans-serif;
 }
-a {
+.menu a {
   color: #fff;
 }
 a:hover {
@@ -41,8 +41,9 @@ a:hover {
   text-decoration: none;
 }
 strong,
-span {
-  color: rgb(229, 49, 35);
+span,
+strong a {
+  color: rgb(229, 49, 35) !important;
 }
 
 section {
