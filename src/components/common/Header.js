@@ -16,11 +16,11 @@ const Header = () => {
           <NavLink to="/" activeStyle={activeStyle} exact>
             About
           </NavLink>
-          <NavLink to="/awards-press" activeStyle={activeStyle} exact>
-            Awards &amp; Press
+          <NavLink to="/awards" activeStyle={activeStyle} exact>
+            Features
           </NavLink>
-          <NavLink to="/tech-stark" activeStyle={activeStyle}>
-            Tech stack
+          <NavLink to="/articles" activeStyle={activeStyle}>
+            Articles
           </NavLink>
         </nav>
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import AboutSection from "./AboutSection";
-import SocialSection from "./SocialSection";
+import SocialSection from "../common/SocialSection";
 
 const AboutPage = () => (
   <>

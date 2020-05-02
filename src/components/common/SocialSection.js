@@ -5,7 +5,7 @@ const SocialSection = () => (
     <div className="row">
       <div className="col-md-7 offset-md-3">
         <h1 className="section-title">
-          <span>Connect</span> socially
+          <span>Connect</span> on socials
         </h1>
 
         <ul className="social-list">

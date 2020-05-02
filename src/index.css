@@ -32,13 +32,13 @@ h4,
 h5,
 h6 {
   font-family: "Montserrat", sans-serif;
-  line-height: 100px;
 }
 a {
   color: #fff;
 }
 a:hover {
   color: #000;
+  text-decoration: none;
 }
 strong,
 span {
@@ -65,6 +65,12 @@ section .section-title {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
 }
+
+.section-subtitle {
+  font-size: 1.2em;
+  color: #333;
+  text-align: center;
+}
 .avatar {
   width: 80px;
   height: 80px;
@@ -86,6 +92,20 @@ section .section-title {
 .menu,
 .avatar {
   align-self: center;
+}
+.awards-list,
+.awards-list li {
+  text-align: center;
+}
+.awards-list li {
+  margin-right: 20px;
+}
+.awards-images {
+  display: block;
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  border: 1px solid #e1e1e1;
 }
 
 .social-list {
