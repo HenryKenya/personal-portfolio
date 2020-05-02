@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/static/css/main.b390bf1c.chunk.css",
-    "main.js": "/personal-portfolio/static/js/main.9d321805.chunk.js",
-    "main.js.map": "/personal-portfolio/static/js/main.9d321805.chunk.js.map",
-    "runtime-main.js": "/personal-portfolio/static/js/runtime-main.f1df90af.js",
-    "runtime-main.js.map": "/personal-portfolio/static/js/runtime-main.f1df90af.js.map",
-    "static/js/2.20ebbbb8.chunk.js": "/personal-portfolio/static/js/2.20ebbbb8.chunk.js",
-    "static/js/2.20ebbbb8.chunk.js.map": "/personal-portfolio/static/js/2.20ebbbb8.chunk.js.map",
-    "index.html": "/personal-portfolio/index.html",
-    "precache-manifest.b9a8a65096688afd63c4c3728816c347.js": "/personal-portfolio/precache-manifest.b9a8a65096688afd63c4c3728816c347.js",
-    "service-worker.js": "/personal-portfolio/service-worker.js",
-    "static/css/main.b390bf1c.chunk.css.map": "/personal-portfolio/static/css/main.b390bf1c.chunk.css.map",
-    "static/js/2.20ebbbb8.chunk.js.LICENSE.txt": "/personal-portfolio/static/js/2.20ebbbb8.chunk.js.LICENSE.txt",
-    "static/media/gsea_logo.png": "/personal-portfolio/static/media/gsea_logo.50211009.png",
-    "static/media/index.css": "/personal-portfolio/static/media/hero-bg.701b2c95.jpg",
-    "static/media/sahara_logo.png": "/personal-portfolio/static/media/sahara_logo.4070da2b.png"
+    "main.css": "/portfolio/static/css/main.a2c2fad3.chunk.css",
+    "main.js": "/portfolio/static/js/main.7b175a6e.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.7b175a6e.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.f4f2abbf.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.f4f2abbf.js.map",
+    "static/js/2.20ebbbb8.chunk.js": "/portfolio/static/js/2.20ebbbb8.chunk.js",
+    "static/js/2.20ebbbb8.chunk.js.map": "/portfolio/static/js/2.20ebbbb8.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.9e0ca089a7f813b5574e49a5a1d855f0.js": "/portfolio/precache-manifest.9e0ca089a7f813b5574e49a5a1d855f0.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.a2c2fad3.chunk.css.map": "/portfolio/static/css/main.a2c2fad3.chunk.css.map",
+    "static/js/2.20ebbbb8.chunk.js.LICENSE.txt": "/portfolio/static/js/2.20ebbbb8.chunk.js.LICENSE.txt",
+    "static/media/gsea_logo.png": "/portfolio/static/media/gsea_logo.50211009.png",
+    "static/media/index.css": "/portfolio/static/media/hero-bg.701b2c95.jpg",
+    "static/media/sahara_logo.png": "/portfolio/static/media/sahara_logo.4070da2b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.f1df90af.js",
+    "static/js/runtime-main.f4f2abbf.js",
     "static/js/2.20ebbbb8.chunk.js",
-    "static/css/main.b390bf1c.chunk.css",
-    "static/js/main.9d321805.chunk.js"
+    "static/css/main.a2c2fad3.chunk.css",
+    "static/js/main.7b175a6e.chunk.js"
   ]
 }
