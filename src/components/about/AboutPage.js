@@ -1,11 +1,11 @@
 import React from "react";
 import AboutSection from "./AboutSection";
-import SocialSection from "../common/SocialSection";
+import Footer from "../common/Footer";
 
 const AboutPage = () => (
   <>
     <AboutSection />
-    <SocialSection />
+    <Footer />
   </>
 );
 export default AboutPage;

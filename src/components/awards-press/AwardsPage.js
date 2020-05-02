@@ -4,7 +4,7 @@ import sahara_logo from "../../images/sahara_logo.png";
 import tuk_logo from "../../images/tuk_logo.png";
 import api_logo from "../../images/api-logo.png";
 import ja_logo from "../../images/ja_logo.jpeg";
-import SocialSection from "../common/SocialSection";
+import Footer from "../common/Footer";
 
 const AwardsPage = () => (
   <>
@@ -33,7 +33,7 @@ const AwardsPage = () => (
           </ul>
         </div>
       </div>
-      <SocialSection />
+      <Footer />
     </section>
   </>
 );
