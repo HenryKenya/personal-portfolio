@@ -35,7 +35,7 @@ const AboutSection = () => (
               Moringa School{" "}
             </a>
           </strong>
-          and the Android Lead for{" "}
+          and Android Lead at{" "}
           <strong>
             <a
               href="https://skylinedesign.co.ke/"
