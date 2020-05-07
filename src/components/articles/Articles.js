@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ArticleItem from "./ArticleItem";
 
 class Articles extends Component {
   state = {
@@ -9,9 +10,10 @@ class Articles extends Component {
   componentDidMount() {
     const url = "https://chronicles.katanawebworld.com/wp-json/wp/v2/posts";
     fetch(url)
-      .then((res) =>
+      .then((res) => res.json())
+      .then((data) =>
         this.setState({
-          articles: res.data,
+          articles: data,
           isLoaded: true,
         })
       )
@@ -19,8 +21,19 @@ class Articles extends Component {
   }
 
   render() {
-    console.log(this.state);
-    return <div></div>;
+    //console.log(this.state);
+    const { articles, isLoaded } = this.state;
+    if (isLoaded) {
+      return (
+        <div>
+          {articles.map((article) => (
+            <ArticleItem article={article} key={article.id} />
+          ))}
+        </div>
+      );
+    }
+
+    return <h3>Loading...</h3>;
   }
 }
 
