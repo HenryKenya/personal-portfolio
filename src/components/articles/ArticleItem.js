@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
-class ArticleItem extends Component {
+export class ArticleItem extends Component {
   state = {
     imageUrl: "",
     isLoaded: false,
@@ -20,16 +21,36 @@ class ArticleItem extends Component {
   }
 
   render() {
-    const { title, excerpt } = this.props.article;
+    const { slug, title, excerpt, content } = this.props.article;
     const { imageUrl, isLoaded } = this.state;
+    console.log(this.props);
     if (isLoaded) {
-      return (
-        <div>
-          <img src={imageUrl} alt={title.rendered} style={{ width: "800px" }} />
-          <h2>{title.rendered}</h2>
-          <div dangerouslySetInnerHTML={{ __html: excerpt.rendered }}></div>
-        </div>
-      );
+      if (!this.props.isSingleArticle) {
+        return (
+          <div>
+            <img
+              src={imageUrl}
+              alt={title.rendered}
+              style={{ width: "800px" }}
+            />
+            <h2>{title.rendered}</h2>
+            <div dangerouslySetInnerHTML={{ __html: excerpt.rendered }}></div>
+            <Link to={`/article/${slug}`}>Read full article</Link>
+          </div>
+        );
+      } else {
+        return (
+          <div>
+            <img
+              src={imageUrl}
+              alt={title.rendered}
+              style={{ width: "800px" }}
+            />
+            <h2>{title.rendered}</h2>
+            <div dangerouslySetInnerHTML={{ __html: content.rendered }}></div>
+          </div>
+        );
+      }
     }
 
     return null;
