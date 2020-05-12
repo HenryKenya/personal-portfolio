@@ -19,7 +19,7 @@ class Articles extends Component {
         <div className="container">
           <div className="row">
             {articles.map((article, index) => (
-              <div className="col-md-8 col-offset-md-2" key={article.id}>
+              <div className="col-md-9 col-offset-md-1" key={article.id}>
                 <ArticleItem article={article} />
                 <hr className={index < articles.length - 1 ? "show" : "hide"} />
               </div>

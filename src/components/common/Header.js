@@ -14,13 +14,13 @@ const Header = () => {
         <img src={avatar} className="avatar" alt="Avatar" />
         <nav className="menu">
           <NavLink to="/" activeStyle={activeStyle} exact>
-            About
+            In my thoughts
           </NavLink>
           <NavLink to="/awards" activeStyle={activeStyle} exact>
             Features
           </NavLink>
-          <NavLink to="/articles" activeStyle={activeStyle}>
-            Articles
+          <NavLink to="/about" activeStyle={activeStyle} exact>
+            About
           </NavLink>
         </nav>
       </div>
