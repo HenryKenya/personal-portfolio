@@ -87,7 +87,18 @@ const AboutSection = () => (
               Qazini
             </a>
           </strong>{" "}
-          and{" "}
+          ,
+          <strong>
+            <a
+              href="https://levelup.gitconnected.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              LevelUp
+            </a>
+          </strong>{" "}
+          , and{" "}
           <strong>
             <a
               href="https://www.analyticsvidhya.com/"
