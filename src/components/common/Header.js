@@ -4,7 +4,7 @@ import avatar from "../../images/avatar.jpeg";
 
 const Header = () => {
   const activeStyle = {
-    color: "#000",
+    color: "rgb(229, 49, 35)",
     fontWeight: "bold",
   };
 
