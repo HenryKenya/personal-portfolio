@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap");
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -32,8 +32,6 @@ h4,
 h5,
 h6 {
   font-family: "Montserrat", sans-serif;
-
-
 }
 .menu a {
   color: #fff;
@@ -59,15 +57,18 @@ section .section-title {
 }
 
 .z-depth-3 {
-  webkit-box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
-  box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
+  webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+    0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.3);
 }
 
 .hero-section {
   background-size: cover;
   width: 100%;
   height: 40vh;
-  background: rgba(229, 49, 35, 0.4) url("./images/hero-bg.jpg") no-repeat fixed center;
+  background: rgba(229, 49, 35, 0.4) url("./images/hero-bg.jpg") no-repeat fixed
+    center;
   background-blend-mode: multiply;
 }
 
@@ -113,7 +114,6 @@ section .section-title {
   border: 1px solid #e1e1e1;
 }
 
-
 /* Articles styling */
 .article-featured-image {
   width: 100px;
@@ -135,8 +135,10 @@ section .section-title {
 .single-article .z-depth-3 {
   box-shadow: none;
 }
-
-
+.article-content a {
+  color: rgb(229, 49, 35) !important;
+  font-weight: bold;
+}
 
 /* Footer styling */
 .social-list {
