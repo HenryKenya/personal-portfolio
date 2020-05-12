@@ -26,10 +26,10 @@ class Articles extends Component {
             return (
                <div className="container">
                    <div className="row">
-                       {articles.map((article) => (
+                       {articles.map((article, index) => (
                            <div className="col-md-8 col-offset-md-2" key={article.id}>
                                <ArticleItem article={article} />
-                               <hr />
+                               <hr className={ index < articles.length - 1 ? "show" : "hide"}/>
                            </div>
                        ))}
                    </div>
