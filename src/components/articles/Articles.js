@@ -1,44 +1,50 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import ArticleItem from "./ArticleItem";
+import { connect } from "react-redux";
+import { loadArticles } from "../../redux/actions/articlesActions";
+import PropTypes from "prop-types";
 
 class Articles extends Component {
-    state = {
-        articles: [],
-        isLoaded: false,
-    };
+  componentDidMount() {
+    const { articles, loadArticles } = this.props;
+    if (articles.length === 0) {
+      loadArticles().catch((error) => console.log(error));
+    }
+  }
 
-    componentDidMount() {
-        const url = "https://chronicles.katanawebworld.com/wp-json/wp/v2/posts";
-        fetch(url)
-            .then((res) => res.json())
-            .then((data) =>
-                this.setState({
-                    articles: data,
-                    isLoaded: true,
-                })
-            )
-            .catch((error) => console.log(error));
+  render() {
+    const { articles } = this.props;
+    if (articles.length > 0) {
+      return (
+        <div className="container">
+          <div className="row">
+            {articles.map((article, index) => (
+              <div className="col-md-8 col-offset-md-2" key={article.id}>
+                <ArticleItem article={article} />
+                <hr className={index < articles.length - 1 ? "show" : "hide"} />
+              </div>
+            ))}
+          </div>
+        </div>
+      );
     }
 
-    render() {
-        const {articles, isLoaded} = this.state;
-        if (isLoaded) {
-            return (
-               <div className="container">
-                   <div className="row">
-                       {articles.map((article, index) => (
-                           <div className="col-md-8 col-offset-md-2" key={article.id}>
-                               <ArticleItem article={article} />
-                               <hr className={ index < articles.length - 1 ? "show" : "hide"}/>
-                           </div>
-                       ))}
-                   </div>
-               </div>
-            );
-        }
-
-        return <h3>Loading...</h3>;
-    }
+    return <h3>Loading...</h3>;
+  }
 }
 
-export default Articles;
+Articles.propTypes = {
+  articles: PropTypes.array.isRequired,
+};
+
+function mapStateToProps(state) {
+  return {
+    articles: state.articles,
+  };
+}
+
+const mapDispatchToProps = {
+  loadArticles,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Articles);

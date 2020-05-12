@@ -7,6 +7,7 @@ export function loadArticlesSuccess(articles) {
 }
 
 export function loadArticles() {
+  console.log("action called");
   return function (dispatch) {
     dispatch(beginApiCall());
 

@@ -1,8 +1,8 @@
-import { combineReducer } from "redux";
+import { combineReducers } from "redux";
 import articles from "./articlesReducer";
 import apiCallsInProgress from "./apiStatusReducer";
 
-const rootReducer = combineReducer({
+const rootReducer = combineReducers({
   articles,
   apiCallsInProgress,
 });
