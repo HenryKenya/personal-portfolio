@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ArticleItem from "./ArticleItem";
+import Loader from "../common/Loader";
 import { connect } from "react-redux";
 import { loadArticles } from "../../redux/actions/articlesActions";
 import PropTypes from "prop-types";
@@ -30,7 +31,7 @@ class Articles extends Component {
       );
     }
 
-    return <h3>Loading...</h3>;
+    return <Loader />;
   }
 }
 
