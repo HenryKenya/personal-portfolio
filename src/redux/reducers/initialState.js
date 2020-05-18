@@ -1,5 +1,5 @@
 export default {
   articles: [],
-  media: {},
+  media: [],
   apiCallsInProgress: 0,
 };
