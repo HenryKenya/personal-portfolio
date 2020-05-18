@@ -1,15 +1,26 @@
 import React, { Component } from "react";
 import ArticleItem from "./ArticleItem";
-import Loader from "../common/Loader";
 import { connect } from "react-redux";
 import { loadArticles } from "../../redux/actions/articlesActions";
 import PropTypes from "prop-types";
+import Loader from "../common/Loader";
 
 export class ArticlePage extends Component {
-  render() {
-    const { article } = this.props;
+  componentDidMount() {
+    const { articles, loadArticles } = this.props;
+    if (articles.length === 0) {
+      loadArticles().catch((error) => console.log(error));
+    }
+  }
 
-    return <ArticleItem article={article} isSingleArticle={true} />;
+  render() {
+    const { article, articles } = this.props;
+
+    return articles.length > 0 ? (
+      <ArticleItem article={article} isSingleArticle={true} />
+    ) : (
+      <Loader />
+    );
   }
 }
 
