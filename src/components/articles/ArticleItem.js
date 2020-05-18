@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+const moment = require("moment"); // require moment
 
 export class ArticleItem extends Component {
   state = {
@@ -21,18 +22,25 @@ export class ArticleItem extends Component {
   }
 
   render() {
-    const { slug, title, excerpt, content } = this.props.article;
+    const { slug, title, excerpt, content, date } = this.props.article;
     const { imageUrl, isLoaded } = this.state;
-    console.log(this.props);
+
+    const formattedDate = moment(new Date(date));
+    const day = formattedDate.day() + 1;
+    const month = formattedDate.format("MMM");
+
     if (isLoaded) {
       if (!this.props.isSingleArticle) {
         return (
           <div className="single-article">
-            <img
-              src={imageUrl}
-              alt={title.rendered}
-              className="article-featured-image"
-            />
+            <div className="article-published-date">
+              <h4>
+                {day} <br />
+                <span>
+                  {month} {formattedDate.year()}
+                </span>
+              </h4>
+            </div>
             <div className="article-content">
               <h2>{title.rendered}</h2>
               <div dangerouslySetInnerHTML={{ __html: excerpt.rendered }}></div>

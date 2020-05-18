@@ -15,11 +15,12 @@ class Articles extends Component {
   render() {
     const { articles } = this.props;
     if (articles.length > 0) {
+      console.log(articles);
       return (
         <div className="container">
           <div className="row">
             {articles.map((article, index) => (
-              <div className="col-md-9 col-offset-md-1" key={article.id}>
+              <div className="col-md-12" key={article.id}>
                 <ArticleItem article={article} />
                 <hr className={index < articles.length - 1 ? "show" : "hide"} />
               </div>

@@ -6,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #faf8f1;
 }
 ul {
   list-style-type: none;
@@ -136,9 +137,24 @@ section .section-title {
 .single-article .z-depth-3 {
   box-shadow: none;
 }
+.article-content {
+  flex: 0.8;
+}
 .article-content a {
   color: rgb(229, 49, 35) !important;
   font-weight: bold;
+}
+.article-published-date {
+  padding: 0 20px;
+  text-align: left;
+  flex: 0.2;
+}
+.article-published-date h4 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.article-published-date h4 span {
+  font-size: 1.7rem;
 }
 
 /* Footer styling */
