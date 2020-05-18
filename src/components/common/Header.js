@@ -14,7 +14,7 @@ const Header = () => {
         <img src={avatar} className="avatar" alt="Avatar" />
         <nav className="menu">
           <NavLink to="/" activeStyle={activeStyle} exact>
-            In my thoughts
+            Mental Notes
           </NavLink>
           <NavLink to="/awards" activeStyle={activeStyle} exact>
             Features
