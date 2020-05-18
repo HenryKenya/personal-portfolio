@@ -16,7 +16,6 @@ class Articles extends Component {
   render() {
     const { articles } = this.props;
     if (articles.length > 0) {
-      console.log(articles);
       return (
         <div className="container">
           <div className="row">

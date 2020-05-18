@@ -3,8 +3,9 @@ import RenderHTML from "../common/RenderHTML";
 
 const SingleArticleItem = (props) => {
   const { title, content } = props.article;
-  const { image } = props.media;
-  const imageUrl = image.data.media_details.sizes.full.source_url;
+
+  console.log(props.media);
+  const imageUrl = props.media.media_details.sizes.full.source_url;
   return (
     <div>
       <img src={imageUrl} alt={title.rendered} style={{ width: "800px" }} />

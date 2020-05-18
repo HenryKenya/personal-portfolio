@@ -6,11 +6,11 @@ export function loadMediaSuccess(media) {
   return { type: types.LOAD_IMAGES_SUCCESS, media };
 }
 
-export function loadMedia() {
+export function loadMedia(id) {
   return function (dispatch) {
     dispatch(beginApiCall());
     return mediaApi
-      .getFeaturedMedia()
+      .getFeaturedMedia(id)
       .then((media) => {
         dispatch(loadMediaSuccess(media));
       })
