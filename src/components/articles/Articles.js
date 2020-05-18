@@ -37,6 +37,7 @@ class Articles extends Component {
 
 Articles.propTypes = {
   articles: PropTypes.array.isRequired,
+  loadArticles: PropTypes.func.isRequired,
 };
 
 function mapStateToProps(state) {
