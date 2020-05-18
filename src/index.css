@@ -140,6 +140,12 @@ section .section-title {
 .article-content {
   flex: 0.8;
 }
+.article-content div:first-child {
+  font-size: 28px;
+  line-height: 48px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
 .article-content a {
   color: rgb(229, 49, 35) !important;
   font-weight: bold;

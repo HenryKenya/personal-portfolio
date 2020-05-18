@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import RenderHTML from "../common/RenderHTML";
 const moment = require("moment"); // require moment
 
 export class ArticleItem extends Component {
@@ -42,8 +43,8 @@ export class ArticleItem extends Component {
               </h4>
             </div>
             <div className="article-content">
-              <h2>{title.rendered}</h2>
-              <div dangerouslySetInnerHTML={{ __html: excerpt.rendered }}></div>
+              <RenderHTML html={title.rendered} />
+              <RenderHTML html={excerpt.rendered} />
               <Link to={`/article/${slug}`}>
                 <i className="fa fa-file-text" aria-hidden="true"></i> Read full
                 article
