@@ -3,6 +3,6 @@ import { BASE_URL } from "../helpers/constants";
 
 const baseUrl = `${BASE_URL}/media`;
 
-export function getFeaturedMedias() {
+export function getFeaturedMedia() {
   return fetch(baseUrl).then(handleResponse).catch(handleError);
 }
