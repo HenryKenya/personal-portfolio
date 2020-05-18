@@ -6,8 +6,11 @@ export function loadArticlesSuccess(articles) {
   return { type: types.LOAD_ARTICLES_SUCCESS, articles };
 }
 
+export function loadSingleArticleSuccess(article) {
+  return { type: types.LOAD_ARTICLES_SUCCESS, article };
+}
+
 export function loadArticles() {
-  console.log("action called");
   return function (dispatch) {
     dispatch(beginApiCall());
 
@@ -20,5 +23,16 @@ export function loadArticles() {
         dispatch(apiCallError(error));
         throw error;
       });
+  };
+}
+
+export function loadSingleArticle(slug) {
+  return function (dispatch) {
+    dispatch(beginApiCall());
+
+    return articlesApi
+      .getSingleArticle(slug)
+      .then((article) => dispatch(loadSingleArticleSuccess(article)))
+      .catch((error) => dispatch(apiCallError(error)));
   };
 }

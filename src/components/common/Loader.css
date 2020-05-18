@@ -13,13 +13,13 @@
   background: linear-gradient(#ecf0f1, #fff);
 }
 .loading {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 .loading__ring {
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 .loading__ring:first-child {
   transform: skew(30deg, 20deg);
