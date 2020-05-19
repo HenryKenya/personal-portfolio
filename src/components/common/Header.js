@@ -4,7 +4,7 @@ import avatar from "../../images/avatar.jpeg";
 
 const Header = () => {
   const activeStyle = {
-    color: "#000",
+    color: "rgb(229, 49, 35)",
     fontWeight: "bold",
   };
 
@@ -14,13 +14,13 @@ const Header = () => {
         <img src={avatar} className="avatar" alt="Avatar" />
         <nav className="menu">
           <NavLink to="/" activeStyle={activeStyle} exact>
-            About
+            Mental Notes
           </NavLink>
           <NavLink to="/awards" activeStyle={activeStyle} exact>
             Features
           </NavLink>
-          <NavLink to="/articles" activeStyle={activeStyle}>
-            Articles
+          <NavLink to="/about" activeStyle={activeStyle} exact>
+            About
           </NavLink>
         </nav>
       </div>
