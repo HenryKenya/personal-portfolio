@@ -7,7 +7,8 @@ import PropTypes from "prop-types";
 
 class Articles extends Component {
   componentDidMount() {
-    const { articles, loadArticles } = this.props;
+    const { articles, loadArticles, loading } = this.props;
+    console.log(loading);
     if (articles.length === 0) {
       loadArticles().catch((error) => console.log(error));
     }
@@ -42,6 +43,7 @@ Articles.propTypes = {
 function mapStateToProps(state) {
   return {
     articles: state.articles,
+    loading: state.apiCallsInProgress,
   };
 }
 

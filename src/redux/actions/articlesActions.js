@@ -8,9 +8,7 @@ export function loadArticlesSuccess(articles) {
 
 export function loadArticles() {
   return function (dispatch) {
-    console.log("this is called again");
     dispatch(beginApiCall());
-
     return articlesApi
       .getArticles()
       .then((articles) => {

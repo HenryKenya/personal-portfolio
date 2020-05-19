@@ -15,7 +15,10 @@ function App() {
         <Route exact path="/" component={Articles} />
         <Route path="/awards" component={AwardsPage} />
         <Route path="/about" component={AboutPage} />
-        <Route path="/article/:slug" component={ArticlePage} />
+        <Route
+          path="/article/:slug"
+          render={(props) => <ArticlePage {...props} />}
+        />
       </Switch>
     </div>
   );
