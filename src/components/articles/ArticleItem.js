@@ -5,8 +5,8 @@ const moment = require("moment"); // require moment
 
 export class ArticleItem extends Component {
   render() {
-    const { slug, title, excerpt, date, featured_media } = this.props.article;
-    console.log(featured_media);
+    const { slug, title, excerpt, date } = this.props.article;
+
     const formattedDate = moment(new Date(date));
     const day = formattedDate.day() + 1;
     const month = formattedDate.format("MMM");

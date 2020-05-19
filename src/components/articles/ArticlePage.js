@@ -8,7 +8,9 @@ import Loader from "../common/Loader";
 
 export class ArticlePage extends Component {
   componentDidMount() {
+    console.log("component did update");
     const { location, actions } = this.props;
+    console.log(location.state);
     actions
       .loadMedia(location.state.featured_media)
       .catch((error) => console.log(error));
@@ -16,8 +18,8 @@ export class ArticlePage extends Component {
 
   render() {
     const { article, singleMedia } = this.props;
-
-    return Object.entries(singleMedia).length === 0 ? (
+    //ßconsole.log(singleMedia);
+    return Object.keys(singleMedia).length === 0 ? (
       <Loader />
     ) : (
       <SingleArticleItem article={article} media={singleMedia} />
@@ -38,6 +40,7 @@ function getMediaById(media, id) {
 
 function mapStateToProps(state, ownProps) {
   const article = ownProps.location.state;
+
   return {
     article,
     media: state.media,
