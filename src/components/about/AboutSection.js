@@ -35,7 +35,7 @@ const AboutSection = () => (
               Moringa School{" "}
             </a>
           </strong>
-          and Android Lead at{" "}
+          and the Android Lead for{" "}
           <strong>
             <a
               href="https://skylinedesign.co.ke/"
@@ -87,18 +87,7 @@ const AboutSection = () => (
               Qazini
             </a>
           </strong>{" "}
-          ,
-          <strong>
-            <a
-              href="https://levelup.gitconnected.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {" "}
-              LevelUp
-            </a>
-          </strong>{" "}
-          , and{" "}
+          and{" "}
           <strong>
             <a
               href="https://www.analyticsvidhya.com/"
