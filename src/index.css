@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap");
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -6,17 +5,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #faf8f1;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 ul {
   list-style-type: none;
 }
 ul li {
   display: inline-block;
-}
-
-.hide {
-  display: none;
 }
 
 p {
@@ -36,10 +35,9 @@ h6 {
 }
 .menu a {
   color: #fff;
-  text-transform: capitalize;
 }
 a:hover {
-  color: rgb(229, 49, 35) !important;
+  color: #000;
   text-decoration: none;
 }
 strong,
@@ -58,19 +56,14 @@ section .section-title {
   text-align: center;
 }
 
-.z-depth-3 {
-  -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
-    0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
-    0 2px 4px -1px rgba(0, 0, 0, 0.3);
-}
-
 .hero-section {
-  background-size: contain;
+  background: url("./images/hero-bg.jpg") rgba(229, 49, 35, 0.4);
+  background-size: cover;
   width: 100%;
-  height: 70vh;
-  background: rgba(229, 49, 35, 0.4) url("./images/bg.jpg") no-repeat fixed
-    center;
+  height: 40vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-blend-mode: multiply;
 }
 
@@ -116,54 +109,6 @@ section .section-title {
   border: 1px solid #e1e1e1;
 }
 
-/* Articles styling */
-.article-featured-image {
-  max-width: 100px;
-  max-height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-right: 20px;
-}
-.single-article {
-  margin: 20px 0;
-  display: inline-flex;
-}
-.single-article h2 {
-  font-size: 28px;
-  line-height: 48px;
-  font-weight: bold;
-}
-
-.single-article .z-depth-3 {
-  box-shadow: none;
-}
-.article-content {
-  flex: 0.8;
-}
-.article-content div:first-child {
-  font-size: 28px;
-  line-height: 48px;
-  font-weight: bold;
-  font-family: "Montserrat", sans-serif;
-}
-.article-content a {
-  color: rgb(229, 49, 35) !important;
-  font-weight: bold;
-}
-.article-published-date {
-  padding: 0 20px;
-  text-align: left;
-  flex: 0.2;
-}
-.article-published-date h4 {
-  font-size: 2rem;
-  font-weight: bold;
-}
-.article-published-date h4 span {
-  font-size: 1.7rem;
-}
-
-/* Footer styling */
 .social-list {
   text-align: center;
 }
